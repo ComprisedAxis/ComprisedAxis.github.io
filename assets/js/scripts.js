@@ -1,5 +1,3 @@
-// assets/js/scripts.js
-
 // Hamburger Menu Toggle
 const menuButton = document.getElementById('menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -10,6 +8,7 @@ if (menuButton && mobileMenu) {
     });
 }
 
+/*
 // Theme Toggle Function
 const themeToggle = document.getElementById('theme-toggle');
 const themeToggleMobile = document.getElementById('theme-toggle-mobile');
@@ -56,4 +55,4 @@ document.addEventListener('DOMContentLoaded', () => {
         htmlElement.classList.remove('dark');
     }
     updateToggleIcons();
-});
+}); */
