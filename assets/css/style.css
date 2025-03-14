@@ -1,0 +1,50 @@
+/* Font Family */
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hover Effects for Social Icons */
+.social-section a i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-section a:hover i {
+    transform: scale(1.1);
+    /* color: #1e40af; */ /* Dark Blue */
+}
+
+/* Skills Section Hover Effects */
+.skills-section i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.skills-section i:hover {
+    transform: scale(1.2);
+    color: #1e40af; /* Dark Blue */
+}
+
+/* Ensure Images in Education Section are Uniform */
+.education-section img {
+    width: 96px; /* 24 * 4px = 96px */
+    height: 96px;
+    object-fit: cover;
+}
+
+/* Center Publications */
+#publications .flex {
+    justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Reduce spacing in About Me Section on Mobile */
+    #about .flex-col {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Smooth Transition for Theme Change */
+html {
+    scroll-behavior: smooth;
+    transition: background-color 0.5s, color 0.5s;
+}
