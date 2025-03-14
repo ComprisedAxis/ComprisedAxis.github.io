@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrico Aldorasi | Portfolio</title>
+    <!-- Favicon Links -->
+    <link rel="icon" href="assets/images/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/images/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <!-- Meta Description -->
+    <meta name="description" content="Welcome to Enrico Aldorasi's Portfolio.">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Font Awesome for Icons (Updated to 6.4.0) -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Enrico Aldorasi | Portfolio" />
+    <meta property="og:description" content="Welcome to Enrico Aldorasi's Portfolio." />
+    <meta property="og:image" content="https://ComprisedAxis.github.io/assets/images/profile.png" />
+    <meta property="og:url" content="https://ComprisedAxis.github.io/" />
+    <meta property="og:type" content="website" />
+</head>
+<body class="font-roboto bg-gray-100 text-gray-800 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow fixed w-full z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-100">
+                <img src="assets/images/icon.png" alt="User Icon" class="w-6 h-6 mr-2">
+                <a href="#home">Enrico Aldorasi</a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Home</a>
+                <a href="#about" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">About</a>
+                <a href="#education" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Education</a>
+                <a href="#projects" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Projects</a>
+                <a href="#publications" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Publications</a>
+                <a href="#contact" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Contacts</a>
+                <!-- Day/Night Toggle -->
+               <!-- <button id="theme-toggle" class="ml-4 focus:outline-none">
+                    <i class="fas fa-moon text-gray-800 dark:text-gray-100"></i>
+                </button> -->          
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <!-- Mobile Day/Night Toggle -->
+                <!-- <button id="theme-toggle-mobile" class="mr-2 focus:outline-none">
+                    <i class="fas fa-moon text-gray-800 dark:text-gray-100"></i>
+                </button> -->
+                <button id="menu-button" class="text-gray-800 dark:text-gray-100 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">About</a>
+            <a href="#education" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Education</a>
+            <a href="#projects" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Projects</a>
+            <a href="#publications" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Publications</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Contacts</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="h-screen flex items-center justify-center relative">
+        <!-- Background Image -->
+        <img src="assets/images/background.jpg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover z-0">
+        <div class="absolute inset-0 bg-black opacity-40 z-1"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 id="typed-text" class="text-4xl md:text-6xl text-white font-bold mb-4"></h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center mb-8">About Me</h2>
+            <div class="flex flex-col md:flex-row items-stretch md:space-x-12">
+                <!-- Profile Image and Social Links -->
+                <div class="md:w-1/3 mb-8 md:mb-0 h-full flex flex-col" data-aos="fade-right">
+                    <img src="assets/images/profile.png" alt="Enrico Aldorasi" class="rounded-lg shadow-lg w-full h-full object-cover flex-grow">
+                    <!-- Social Links -->
+                    <div class="social-section flex justify-center mt-4 space-x-6">
+                        <!-- GitHub -->
+                        <a href="https://github.com/ComprisedAxis" target="_blank" aria-label="GitHub" class="text-gray-800 dark:text-gray-100 hover:text-gray-600">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/enrico-maria-aldorasi-58a220349/" target="_blank" aria-label="LinkedIn" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://x.com/EnricoAldorasi" target="_blank" aria-label="Twitter" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/enricoaldorasi/" target="_blank" aria-label="Instagram" class="text-gray-800 dark:text-gray-100 hover:text-pink-600">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>  
+                </div>
+                <!-- About Text and Skills -->
+                <div class="md:w-2/3 h-full flex flex-col" data-aos="fade-left">
+                    <p class="mb-4">
+                        I'm a Computer Scientist specializing in Artificial Intelligence and Robotics at Sapienza, University of Rome. I have a strong interest in research and development of AI systems, focusing on decision-making processes and creating intelligent and innovative solutions to complex challenges. I'm dedicated to continuous learning in various AI application fields.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-6">Skills</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 flex-grow">
+                        <!-- Skill Card 1: Languages -->
+                        <div class="flex flex-col items-center p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md transition-transform transform hover:scale-105 h-full">
+                            <i class="fas fa-language fa-3x text-blue-600 mb-4"></i>
+                            <h4 class="text-xl font-medium mb-2">Languages</h4>
+                            <p class="text-center">Italian (native)</p>
+                            <p class="text-center">English (B2-C1)</p>
+                            <p class="text-center">Spanish (B2)</p>
+                        </div>
+                        <!-- Skill Card 2: Programming -->
+                        <div class="flex flex-col items-center p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md transition-transform transform hover:scale-105 h-full">
+                            <i class="fas fa-code fa-3x text-green-600 mb-4"></i>
+                            <h4 class="text-xl font-medium mb-2">Programming</h4>
+                            <p class="text-center">Python, C, C++, Java, JavaScript, Matlab, SQL and others</p>
+                        </div>
+                        <!-- Skill Card 3: Libraries and Tools -->
+                        <div class="flex flex-col items-center p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md transition-transform transform hover:scale-105 h-full">
+                            <i class="fas fa-tools fa-3x text-yellow-600 mb-4"></i>
+                            <h4 class="text-xl font-medium mb-2">Libraries and Tools</h4>
+                            <p class="text-center">PyTorch, TensorFlow, ROS, Git, Docker, Office and others</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center mb-12">Education</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Education Card 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-full h-64 flex items-center justify-center">
+                        <img src="assets/images/sapienza.jpg" alt="Master's Degree in Artificial Intelligence and Robotics" class="object-contain max-w-full max-h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Master's Degree in Artificial Intelligence and Robotics</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-2">Sapienza, University of Rome</p>
+                        <p class="text-gray-700 dark:text-gray-300 mb-2">Rome, RM</p>
+                        <p class="text-gray-700 dark:text-gray-300">Sep 2023 - Present</p>
+                    </div>
+                </div>
+        
+                <!-- Education Card 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-full h-64 flex items-center justify-center">
+                        <img src="assets/images/unimol.jpg" alt="Bachelor's Degree in Computer Science" class="object-contain max-w-full max-h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Bachelor's Degree in Computer Science</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-2">Unimol, University of Molise</p>
+                        <p class="text-gray-700 dark:text-gray-300 mb-2">Pesche, IS</p>
+                        <p class="text-gray-700 dark:text-gray-300">Sep 2019 - Apr 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Education Card 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up">
+                    <div class="w-full h-64 flex items-center justify-center">
+                        <img src="assets/images/pilla.jpg" alt="Technical Education Diploma" class="object-contain max-w-full max-h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Technical Education Diploma</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-2">Istituto di Istruzione Secondaria Superiore "Leopoldo Pilla"</p>
+                        <p class="text-gray-700 dark:text-gray-300 mb-2">Campobasso, CB</p>
+                        <p class="text-gray-700 dark:text-gray-300">Sep 2014 - Jul 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center mb-12">Publications</h2>
+            <div class="flex justify-center">
+                <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md p-6 w-full md:w-2/3 text-center" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold mb-2">CreatiChain: From Creation to Market</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2"><strong>Authors:</strong> Enrico Maria Aldorasi, Remo Pareschi, Francesco Salzano</p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2"><strong>Conference:</strong> Image Analysis and Processing - ICIAP 2023 Workshops</p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2"><strong>Year:</strong> 2024</p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4"><strong>Abstract:</strong> CreatiChain is a novel, integrated workflow management system that supports creating and monetizing AI-generated art. The system leverages grammars (Prompt Grammars) for semi-automated prompt generation, advanced AI algorithms for digital art creation, and blockchain technology for NFT minting and placement. The workflow begins with generating creative prompts using Prompt Grammars, offering creators a high level of customization. These prompts are fed into an AI-based art generation platform, producing unique digital art pieces. Once the art is created, the system automatically mints it into an NFT and places it on an NFT marketplace. CreatiChain streamlines access to AI art generation and NFT creation, offering a comprehensive solution for artists, designers, and digital creators to navigate the rapidly evolving digital art landscape.</p>
+                    <a href="https://doi.org/10.1007/978-3-031-51026-7_30" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Read Publication</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center mb-12">My Projects</h2>
+            <div class="flex flex-wrap -mx-4">
+                <!-- Project rl -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-full">
+                        <img src="assets/images/project4.jpeg" alt="Leveraging Reinforcement Learning for Cost-Effective Medical Diagnostics" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col justify-between h-full">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Leveraging Reinforcement Learning for Cost-Effective Medical Diagnostics</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">RL methods employed to balance the trade-off between medical testing budgets and prediction accuracy by identifying Pareto-optimal policies..</p>
+                            </div>
+                            <a href="https://github.com/ComprisedAxis/Leveraging-Reinforcement-Learning-for-Cost-Effective-Medical-Diagnostics" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-auto">View Project on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project mass-spring -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-full">
+                        <img src="assets/images/project3.png" alt="Mass-Spring Cloth Simulator" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col justify-between h-full">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Mass-Spring Cloth Simulator</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">A 3D simulator of cloth-like materials physics using the mass-spring model.</p>
+                            </div>
+                            <a href="https://github.com/ComprisedAxis/mass-spring-cloth-simulator" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-auto">View Project on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project shared-attention -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-full">
+                        <img src="assets/images/project2.png" alt="Style Aligned Image Generation via Shared Attention" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col justify-between h-full">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Style Aligned Image Generation via Shared Attention</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">Explores innovative techniques in image generation by aligning styles using shared attention mechanisms.</p>
+                            </div>
+                            <a href="https://github.com/noostale/style-aligned-image-generation-via-shared-attention" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-auto">View Project on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project drone-sem-seg -->
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" data-aos="fade-up">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-full">
+                        <img src="assets/images/project1.png" alt="Semantic Segmentation of Drone Aerial Images" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col justify-between h-full">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Semantic Segmentation of Drone Aerial Images</h3>
+                                <p class="text-gray-700 dark:text-gray-300 mb-4">Semantic Segmentation of drone imagery using different Computer Vision techniques.</p>
+                            </div>
+                            <a href="https://github.com/ComprisedAxis/drone-sem-seg-nets" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-auto">View Project on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center mb-12">Contacts</h2>
+            <div class="flex flex-col md:flex-row md:space-x-12">
+                <!-- Send Email Section -->
+                <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                    <div class="bg-gray-100 dark:bg-gray-700 p-8 rounded-lg shadow-md flex flex-col items-center justify-center">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Get in Touch</h3>
+                        <a href="mailto:enrico.aldorasi2000@gmail.com" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center" title="Click to send me an email">
+                            Send Me an Email
+                        </a>
+                    </div>
+                </div>
+                <!-- CV Request Section -->
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="bg-gray-100 dark:bg-gray-700 p-8 rounded-lg shadow-md flex flex-col items-center">
+                        <h3 class="text-xl font-semibold mb-4 text-center">Request My Curriculum Vitae</h3>
+                        <a href="mailto:enrico.aldorasi2000@gmail.com?subject=Request%20CV&body=Hello,%0A%0AI%20would%20like%20to%20request%20your%20Curriculum%20Vitae.%0A%0AThank%20you." class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center" title="Click to request my CV">
+                            Request CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Enrico Maria Aldorasi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Typed.js for Typing Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        // Initialize Typed.js
+        var typed = new Typed('#typed-text', {
+            strings: ["I'm Enrico Aldorasi", "I'm a Computer Scientist", "I'm an Artificial Intelligence and Robotics student"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>
