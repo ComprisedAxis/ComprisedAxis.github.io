@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enrico Aldorasi | Portfolio</title>
     <!-- Favicon Links -->
-    <link rel="icon" href="assets/images/favicon_io/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="assets/images/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="assets/images/favicon_io/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="assets/images/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest" />
     <!-- Meta Description -->
-    <meta name="description" content="Welcome to Enrico Aldorasi's Portfolio.">
+    <meta name="description" content="Welcome to Enrico Aldorasi's Portfolio." />
     <!-- Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- AOS CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <!-- Font Awesome for Icons (Updated to 6.4.0) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <!-- Font Awesome for Icons -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Enrico Aldorasi | Portfolio" />
@@ -34,54 +35,46 @@
 </head>
 <body class="font-roboto bg-gray-100 text-gray-800 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100">
     <!-- Navigation -->
-    <nav class="bg-white dark:bg-gray-800 shadow fixed w-full z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-100">
-                <img src="assets/images/icon.png" alt="User Icon" class="w-6 h-6 mr-2">
-                <a href="#home">Enrico Aldorasi</a>
-            </div>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="#home" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Home</a>
-                <a href="#about" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">About</a>
-                <a href="#education" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Education</a>
-                <a href="#publications" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Publications</a>
-                <a href="#projects" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Projects</a>
-                <a href="#contact" class="text-gray-800 dark:text-gray-100 hover:text-blue-600">Contacts</a>
-                <!-- Day/Night Toggle -->
-               <!-- <button id="theme-toggle" class="ml-4 focus:outline-none">
-                    <i class="fas fa-moon text-gray-800 dark:text-gray-100"></i>
-                </button> -->          
-            </div>
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden flex items-center">
-                <!-- Mobile Day/Night Toggle -->
-                <!-- <button id="theme-toggle-mobile" class="mr-2 focus:outline-none">
-                    <i class="fas fa-moon text-gray-800 dark:text-gray-100"></i>
-                </button> -->
-                <button id="menu-button" class="text-gray-800 dark:text-gray-100 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#home" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Home</a>
-            <a href="#about" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">About</a>
-            <a href="#education" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Education</a>
-            <a href="#projects" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Projects</a>
-            <a href="#publications" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Publications</a>
-            <a href="#contact" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700">Contacts</a>
-        </div>
-    </nav>
+  <nav class="bg-white shadow fixed w-full z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <div class="flex items-center text-xl font-bold text-gray-800">
+        <img src="assets/images/icon.png" alt="User Icon" class="w-6 h-6 mr-2" />
+        <a href="#home">Enrico Aldorasi</a>
+      </div>
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="#home" class="text-gray-800 hover:text-blue-600">Home</a>
+        <a href="#about" class="text-gray-800 hover:text-blue-600">About</a>
+        <a href="#education" class="text-gray-800 hover:text-blue-600">Education</a>
+        <a href="#publications" class="text-gray-800 hover:text-blue-600">Publications</a>
+        <a href="#projects" class="text-gray-800 hover:text-blue-600">Projects</a>
+        <a href="#contact" class="text-gray-800 hover:text-blue-600">Contacts</a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button id="menu-button" class="text-gray-800 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#home" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Home</a>
+      <a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">About</a>
+      <a href="#education" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Education</a>
+      <a href="#projects" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Projects</a>
+      <a href="#publications" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Publications</a>
+      <a href="#contact" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contacts</a>
+    </div>
+  </nav>
 
     <!-- Home Section -->
     <section id="home" class="h-screen flex items-center justify-center relative">
         <!-- Background Image -->
-        <img src="assets/images/background.jpg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover z-0">
+        <img src="assets/images/background.webp" alt="Background Image" class="absolute inset-0 w-full h-full object-cover z-0">
         <div class="absolute inset-0 bg-black opacity-40 z-1"></div>
         <div class="relative z-10 text-center px-4">
             <h1 id="typed-text" class="text-4xl md:text-6xl text-white font-bold mb-4"></h1>
@@ -213,72 +206,112 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-100 dark:bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-semibold text-center mb-12">My Projects</h2>
-            <div class="flex flex-wrap -mx-4">
-                <!-- Project rl -->
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-full">
-                        <img src="assets/images/project4.jpeg" alt="Leveraging Reinforcement Learning for Cost-Effective Medical Diagnostics" class="w-full h-48 object-cover">
-                        <div class="p-6 flex flex-col justify-between h-full">
-                            <div>
-                                <h3 class="text-xl font-semibold mb-2">Leveraging Reinforcement Learning for Cost-Effective Medical Diagnostics</h3>
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">RL methods employed to balance the trade-off between medical testing budgets and prediction accuracy by identifying Pareto-optimal policies..</p>
-                            </div>
-                            <a href="https://github.com/ComprisedAxis/Leveraging-Reinforcement-Learning-for-Cost-Effective-Medical-Diagnostics" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-auto">View Project on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project mass-spring -->
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" data-aos="fade-up" data-aos-delay="400">
-                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-full">
-                        <img src="assets/images/project3.png" alt="Mass-Spring Cloth Simulator" class="w-full h-48 object-cover">
-                        <div class="p-6 flex flex-col justify-between h-full">
-                            <div>
-                                <h3 class="text-xl font-semibold mb-2">Mass-Spring Cloth Simulator</h3>
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">A 3D simulator of cloth-like materials physics using the mass-spring model.</p>
-                            </div>
-                            <a href="https://github.com/ComprisedAxis/mass-spring-cloth-simulator" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-auto">View Project on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project shared-attention -->
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-full">
-                        <img src="assets/images/project2.png" alt="Style Aligned Image Generation via Shared Attention" class="w-full h-48 object-cover">
-                        <div class="p-6 flex flex-col justify-between h-full">
-                            <div>
-                                <h3 class="text-xl font-semibold mb-2">Style Aligned Image Generation via Shared Attention</h3>
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">Explores innovative techniques in image generation by aligning styles using shared attention mechanisms.</p>
-                            </div>
-                            <a href="https://github.com/noostale/style-aligned-image-generation-via-shared-attention" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-auto">View Project on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project drone-sem-seg -->
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" data-aos="fade-up">
-                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-full">
-                        <img src="assets/images/project1.png" alt="Semantic Segmentation of Drone Aerial Images" class="w-full h-48 object-cover">
-                        <div class="p-6 flex flex-col justify-between h-full">
-                            <div>
-                                <h3 class="text-xl font-semibold mb-2">Semantic Segmentation of Drone Aerial Images</h3>
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">Semantic Segmentation of drone imagery using different Computer Vision techniques.</p>
-                            </div>
-                            <a href="https://github.com/ComprisedAxis/drone-sem-seg-nets" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-auto">View Project on GitHub</a>
-                        </div>
-                    </div>
-                </div>
+
+<!-- Projects Section -->
+<!-- Projects Section (Horizontally Scrollable) -->
+<section id="projects" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-12">My Projects</h2>
+      <div class="flex space-x-4 overflow-x-auto pb-4">
+        <!-- Project: Leveraging Reinforcement Learning for Cost-Effective Medical Diagnostics -->
+        <div class="flex-shrink-0 w-full md:w-1/3 px-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card flex flex-col bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <img src="assets/images/project4.jpeg" alt="Leveraging Reinforcement Learning for Cost-Effective Medical Diagnostics" loading="lazy" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-semibold mb-2">
+                Leveraging Reinforcement Learning for Cost-Effective Medical Diagnostics
+              </h3>
+              <p class="text-gray-700 mb-4 flex-grow">
+                RL methods to balance medical testing budgets and prediction accuracy by identifying Pareto-optimal policies.
+              </p>
+              <a href="https://github.com/ComprisedAxis/leveraging-reinforcement-learning-for-cost-effective-medical-diagnostics" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-center">
+                View Project on GitHub
+              </a>
             </div>
+          </div>
         </div>
-    </section>
+        <!-- Project: Mass-Spring Cloth Simulator -->
+        <div class="flex-shrink-0 w-full md:w-1/3 px-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-card flex flex-col bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <img src="assets/images/project3.png" alt="Mass-Spring Cloth Simulator" loading="lazy" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-semibold mb-2">
+                Mass-Spring Cloth Simulator
+              </h3>
+              <p class="text-gray-700 mb-4 flex-grow">
+                A 3D simulator of cloth-like materials physics using a mass-spring model.
+              </p>
+              <a href="https://github.com/ComprisedAxis/mass-spring-cloth-simulator" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-center">
+                View Project on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project: Style Aligned Image Generation via Shared Attention -->
+        <div class="flex-shrink-0 w-full md:w-1/3 px-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card flex flex-col bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <img src="assets/images/project2.png" alt="Style Aligned Image Generation via Shared Attention" loading="lazy" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-semibold mb-2">
+                Style Aligned Image Generation via Shared Attention
+              </h3>
+              <p class="text-gray-700 mb-4 flex-grow">
+                Innovative image generation by aligning styles using shared attention mechanisms.
+              </p>
+              <a href="https://github.com/ComprisedAxis/style-aligned-image-generation-via-shared-attention" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-center">
+                View Project on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project: Semantic Segmentation of Drone Aerial Images -->
+        <div class="flex-shrink-0 w-full md:w-1/3 px-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-card flex flex-col bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <img src="assets/images/project1.png" alt="Semantic Segmentation of Drone Aerial Images" loading="lazy" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-semibold mb-2">
+                Semantic Segmentation of Drone Aerial Images
+              </h3>
+              <p class="text-gray-700 mb-4 flex-grow">
+                Semantic segmentation of drone imagery using various computer vision techniques.
+              </p>
+              <a href="https://github.com/ComprisedAxis/drone-sem-seg-nets" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-center">
+                View Project on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Equalize Project Cards Height -->
+  <script>
+    function equalizeProjectCardHeights() {
+      const cards = document.querySelectorAll('.project-card');
+      let maxHeight = 0;
+      // Reset heights to auto for recalculation
+      cards.forEach(card => card.style.height = 'auto');
+      // Determine maximum height
+      cards.forEach(card => {
+        if (card.offsetHeight > maxHeight) {
+          maxHeight = card.offsetHeight;
+        }
+      });
+      // Apply maximum height to all cards
+      cards.forEach(card => card.style.height = maxHeight + 'px');
+    }
+  
+    window.addEventListener('load', equalizeProjectCardHeights);
+    window.addEventListener('resize', equalizeProjectCardHeights);
+  </script>
+
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white dark:bg-gray-800">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-semibold text-center mb-12">Contacts</h2>
-            <div class="flex flex-col md:flex-row md:space-x-12">
+            <div class="flex justify-center">
                 <!-- Send Email Section -->
                 <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
                     <div class="bg-gray-100 dark:bg-gray-700 p-8 rounded-lg shadow-md flex flex-col items-center justify-center">
@@ -286,12 +319,7 @@
                         <a href="mailto:enrico.aldorasi2000@gmail.com" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center" title="Click to send me an email">
                             Send Me an Email
                         </a>
-                    </div>
-                </div>
-                <!-- CV Request Section -->
-                <div class="md:w-1/2" data-aos="fade-left">
-                    <div class="bg-gray-100 dark:bg-gray-700 p-8 rounded-lg shadow-md flex flex-col items-center">
-                        <h3 class="text-xl font-semibold mb-4 text-center">Request My Curriculum Vitae</h3>
+                        <br>
                         <a href="mailto:enrico.aldorasi2000@gmail.com?subject=Request%20CV&body=Hello,%0A%0AI%20would%20like%20to%20request%20your%20Curriculum%20Vitae.%0A%0AThank%20you." class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center" title="Click to request my CV">
                             Request CV
                         </a>
