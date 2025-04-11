@@ -2,6 +2,21 @@
 .font-roboto {
     font-family: 'Roboto', sans-serif;
   }
+
+  :root {
+    --vh: 100vh;
+  }
+  
+  @media (max-width: 768px) {
+    :root {
+      --vh: 100%;
+    }
+  }
+  
+  #home {
+    height: var(--vh);
+    min-height: 100vh;
+  }
   
   /* Hover Effects for Social Icons */
   .social-section a i {
