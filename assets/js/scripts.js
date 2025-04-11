@@ -16,3 +16,18 @@ if ('scrollRestoration' in history) {
 window.addEventListener('beforeunload', function () {
   window.scrollTo(0, 0);
 });
+
+// Back to Top Button Logic
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopButton.classList.remove('opacity-0', 'pointer-events-none');
+  } else {
+    backToTopButton.classList.add('opacity-0', 'pointer-events-none');
+  }
+});
+
+backToTopButton.addEventListener('click', () => {
+  document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+});
