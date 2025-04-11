@@ -26,6 +26,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preload" as="image" href="assets/images/background.webp" type="image/webp" />
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Enrico Aldorasi | Portfolio" />
     <meta property="og:description" content="Welcome to Enrico Aldorasi's Portfolio." />
@@ -72,13 +73,22 @@
   </nav>
 
     <!-- Home Section -->
-    <section id="home" class="h-screen flex items-center justify-center relative">
-        <!-- Background Image -->
-        <img src="assets/images/background.webp" alt="Background Image" class="absolute inset-0 w-full h-full object-cover z-0">
-        <div class="absolute inset-0 bg-black opacity-40 z-1"></div>
-        <div class="relative z-10 text-center px-4">
-            <h1 id="typed-text" class="text-4xl md:text-6xl text-white font-bold mb-4"></h1>
-        </div>
+    <section id="home" class="h-screen flex items-center justify-center relative overflow-hidden">
+      <picture class="absolute inset-0 w-full h-full z-0">
+        <source srcset="assets/images/background-small.webp" media="(max-width: 768px)">
+        <img
+          src="assets/images/background.webp"
+          alt="Background"
+          width="1920"
+          height="1080"
+          loading="eager"
+          class="w-full h-full object-cover"
+        />
+      </picture>
+      <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+      <div class="relative z-20 text-center px-4">
+        <h1 id="typed-text" class="text-4xl md:text-6xl text-white font-bold mb-4"></h1>
+      </div>
     </section>
 
     <!-- About Section -->
