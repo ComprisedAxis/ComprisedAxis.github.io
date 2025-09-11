@@ -61,3 +61,25 @@
     scroll-behavior: smooth;
     transition: background-color 0.5s, color 0.5s;
   }
+
+  /* === Projects scroll fade overlay === */
+  #projects .scroll-wrapper {
+    position: relative;
+  }
+  #projects .scroll-wrapper::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 4rem;
+    background: linear-gradient(to left, rgba(243,244,246,1), rgba(243,244,246,0));
+    transition: opacity 0.2s;
+    opacity: 1;
+  }
+
+  /* Hide fade when scrolled to end */
+  #projects .scroll-wrapper.no-fade::after {
+    opacity: 0;
+  }

@@ -31,3 +31,21 @@ window.addEventListener('scroll', () => {
 backToTopButton.addEventListener('click', () => {
   document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const scroller = document.getElementById('project-scroller');
+  const wrapper  = scroller.parentElement;
+
+  function updateFade() {
+    // if scrolled to (or past) the end, hide fade
+    if (scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth - 1) {
+      wrapper.classList.add('no-fade');
+    } else {
+      wrapper.classList.remove('no-fade');
+    }
+  }
+
+  // run on scroll and on init (in case it’s already fully visible)
+  scroller.addEventListener('scroll', updateFade);
+  updateFade();
+});
