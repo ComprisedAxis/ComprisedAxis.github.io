@@ -209,18 +209,37 @@
 <!-- Publications Section -->
 <section id="publications" class="py-20 bg-white dark:bg-gray-800">
   <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-center mb-12">Publications</h2>
+      <h2 class="text-3xl font-semibold text-center mb-12">Publications and Preprints</h2>
+      <div class="flex justify-center">
+          <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md p-6 w-full md:w-2/3 text-center" data-aos="fade-up">
+              <h3 class="text-xl font-semibold mb-2">Emotional Human-Environment Interaction Detection via
+Transformer-Graph Reasoning</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-2">
+                  Submission <strong>under review</strong> for Conference acronym ’CIKM, November 07–11, 2026, Rome, RM
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 mb-2">
+                  <strong>Authors:</strong> Francesca Fiani, Enrico Maria Aldorasi, Marco Spina, Samuele Russo and Christian Napoli
+              </p>
+              
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  <strong>Abstract:</strong> Human-Environment Interaction (HEI) is a complex computer vision task which requires a deep understanding of visual and psychological cues. However, the majority of approaches in the literature does not consider human psychology in the detection of interactions between human and object nodes in representation graphs, limiting efficacy of models. To improve the detection of relationships between element pairs in a scene, we present a HEI detection framework that combines a Vision Transformer encoder, a DEtection TRansformer-style object decoder, and a Graph Convolutional Network for reasoning over human-object pairs. DeepFace is used to extract emotion embeddings, which are incorporated into human node features to provide mixed visual and psychological data. Experiments on HICO-DET dataset under the Known Object protocol show that emotion embeddings improve verb classification compared to previous methods applied to HICO-DET, achieving 38.31\% Top-1 accuracy, 71.58\% Top-3 accuracy, 30.82\% macro mAP, and 40.70\% micro mAP. The proposed method also improves macro F1 to 18.63\% and achieves strong performance on rare categories (64.20\% mAP). These results demonstrate that psychological features provide complementary information for interaction disambiguation, necessary to improve the quality of future HEI systems.
+              </p>
+              <a href="#projects"
+                id="go-to-hei-project"
+                class="block text-center bg-blue-600 text-white px-10 py-2 rounded hover:bg-blue-700">
+                Check it out under Projects
+              </a>
+          </div>
+      </div>
+      <br><br>
       <div class="flex justify-center">
           <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md p-6 w-full md:w-2/3 text-center" data-aos="fade-up">
               <h3 class="text-xl font-semibold mb-2">CreatiChain: From Creation to Market</h3>
               <p class="text-gray-600 dark:text-gray-300 mb-2">
+                  Image Analysis and Processing - ICIAP 2023 Workshops
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 mb-2">
                   <strong>Authors:</strong> Enrico Maria Aldorasi, Remo Pareschi, Francesco Salzano
-              </p>
-              <p class="text-gray-600 dark:text-gray-300 mb-2">
-                  <strong>Conference:</strong> Image Analysis and Processing - ICIAP 2023 Workshops
-              </p>
-              <p class="text-gray-600 dark:text-gray-300 mb-2">
-                  <strong>Year:</strong> 2024
               </p>
               <p class="text-gray-600 dark:text-gray-300 mb-4">
                   <strong>Abstract:</strong> CreatiChain is a novel, integrated workflow management system that supports creating and monetizing AI-generated art. The system leverages grammars (Prompt Grammars) for semi-automated prompt generation, advanced AI algorithms for digital art creation, and blockchain technology for NFT minting and placement. The workflow begins with generating creative prompts using Prompt Grammars, offering creators a high level of customization. These prompts are fed into an AI-based art generation platform, producing unique digital art pieces. Once the art is created, the system automatically mints it into an NFT and places it on an NFT marketplace. CreatiChain streamlines access to AI art generation and NFT creation, offering a comprehensive solution for artists, designers, and digital creators to navigate the rapidly evolving digital art landscape.
@@ -241,7 +260,7 @@
            class="flex space-x-4 overflow-x-auto pb-4 snap-x snap-mandatory">
 
         <!-- Project 1 -->
-        <div class="flex-shrink-0 w-full md:w-1/3 px-2 snap-center" data-aos="fade-up" data-aos-delay="200">
+        <div id="project-hei" class="flex-shrink-0 w-full md:w-1/3 px-2 snap-center" data-aos="fade-up" data-aos-delay="200">
           <div class="project-card flex flex-col bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src="assets/images/hico.webp"
                  alt="Emotion-Aware Human–Environment Interaction Detection via

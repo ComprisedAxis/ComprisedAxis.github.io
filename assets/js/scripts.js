@@ -94,3 +94,25 @@ document.querySelectorAll('.github-check-link').forEach(link => {
         }
     });
 });
+
+const heiProjectButton = document.getElementById('go-to-hei-project');
+const heiProject = document.getElementById('project-hei');
+const projectScroller = document.getElementById('project-scroller');
+
+if (heiProjectButton && heiProject && projectScroller) {
+    heiProjectButton.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        document.getElementById('projects').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+
+        setTimeout(() => {
+            projectScroller.scrollTo({
+                left: heiProject.offsetLeft - projectScroller.offsetLeft,
+                behavior: 'smooth'
+            });
+        }, 500);
+    });
+}
