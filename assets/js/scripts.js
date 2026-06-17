@@ -49,3 +49,48 @@ document.addEventListener('DOMContentLoaded', () => {
   scroller.addEventListener('scroll', updateFade);
   updateFade();
 });
+
+// GitHub repository availability check
+const repoModal = document.getElementById('repo-modal');
+const repoModalClose = document.getElementById('repo-modal-close');
+
+function showRepoModal() {
+    if (repoModal) {
+        repoModal.classList.remove('hidden');
+        repoModal.classList.add('flex');
+    }
+}
+
+function hideRepoModal() {
+    if (repoModal) {
+        repoModal.classList.add('hidden');
+        repoModal.classList.remove('flex');
+    }
+}
+
+if (repoModalClose) {
+    repoModalClose.addEventListener('click', hideRepoModal);
+}
+
+document.querySelectorAll('.github-check-link').forEach(link => {
+    link.addEventListener('click', async function (event) {
+        event.preventDefault();
+
+        const repo = this.dataset.githubRepo;
+        const githubUrl = this.href;
+
+        try {
+            const response = await fetch(`https://api.github.com/repos/${repo}`);
+
+            if (response.status === 404) {
+                showRepoModal();
+            } else if (response.ok) {
+                window.open(githubUrl, '_blank');
+            } else {
+                showRepoModal();
+            }
+        } catch (error) {
+            showRepoModal();
+        }
+    });
+});
